@@ -41,3 +41,9 @@ function mori (a,b){
   console.log('mori는 ',a,'와',b,'를 좋아해');
 }
 mori ("bam","sweet potato");
+
+function parang (a,b){
+  return `parang이는 ${a}와 ${b}를 좋아해`;
+}
+const fake = parang("mori","moris")
+console.log(fake);
