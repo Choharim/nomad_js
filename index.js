@@ -47,3 +47,29 @@ function parang (a,b){
 }
 const fake = parang("mori","moris")
 console.log(fake);
+
+const calculators = {
+
+  plus : function (a,b){
+    return a + b ;
+  },
+  minus: function (a,b){
+    return a - b ;
+  },
+  divide : function (a,b){
+    return a / b ;
+  },
+  multiply : function (a,b){
+    return a * b ;
+  },
+  root : function (a,b){
+    return a**b;
+  }
+
+};
+
+console.log(calculators.plus(1,1));
+
+const minus = calculators.minus(1,1);
+console.log(minus);
+console.log(calculators.root(2,3));
