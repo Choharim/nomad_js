@@ -1,12 +1,11 @@
 
 
 const title = document.querySelector("#text");
-title.style.color = "red";
 
 const base = "red";
 const other = "blue";
 
-function colorChangeClick () {
+function colorChange () {
 
   const current = title.style.color;
 
@@ -18,4 +17,9 @@ else {
 }
 
 }
-window.addEventListener("click",colorChangeClick);
+
+function init () {
+  title.style.color = "red";
+  title.addEventListener("mouseenter",colorChange);
+}
+init();
