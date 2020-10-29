@@ -36,3 +36,8 @@ const friendsOfMori =
 console.log(friendsOfMori.fav[0].one);
 console.log(friendsOfMori.pav.tri[0]);
 console.log(friendsOfMori.fav[0].one);
+
+function mori (a,b){
+  console.log('mori는 ',a,'와',b,'를 좋아해');
+}
+mori ("bam","sweet potato");
