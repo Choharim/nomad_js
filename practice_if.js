@@ -23,3 +23,23 @@ function init () {
   title.addEventListener("mouseenter",colorChange);
 }
 init();
+
+
+
+const otherClassName = "clicked";
+
+function nameChange () {
+  const currentClassName = title.className ;
+  if(currentClassName !== otherClassName){
+    title.className = otherClassName;
+    
+  }
+  else{
+    title.className = "unclicked";
+  }
+}
+
+function init () {
+  window.addEventListener("click",nameChange);
+}
+init ();
